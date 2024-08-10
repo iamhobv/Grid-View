@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    
+}
+body{
+    background-color:  hsl(210, 46%, 95%);
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.cards{
+    margin: 15px 0;
+    padding: 50px 80px;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 'daniel daniel jonathan kira'
+                         'jeanette patrick patrick kira';                     
+}
+.card{
+    padding: 24px 30px;
+    box-shadow: 5px 5px 10px  rgba(61, 61, 61, 0.5) ;
+    border-radius: 10px;
+}
+.header{
+    display: flex;
+    gap: 1rem;
+}
+.name{
+    font-weight: 600;
+    font-size: 13px;
+    color: hsl(0, 0%, 81%);
+}
+.grad{
+    color: hsla(0, 0%, 81%, 0.5);
+    font-size: 11px;
+}
+.header img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid hsla(0, 0%, 81%, 0.5);
+}
+
+.summery{
+    color: rgb(255 255 255/1);
+    font-size: 1.25rem;
+  
+  font-weight: 400;
+  margin: 22px 0;
+}
+.quote{
+    color: hsl(0, 0%, 81%);
+    opacity: .7;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.daniel{
+    grid-area: daniel;
+    background-color: hsl(263, 55%, 52%);
+    
+}
+
+.jonathan{
+    grid-area: jonathan;
+    background-color: hsl(217, 19%, 35%);
+}
+
+
+.patrick{
+    grid-area: patrick;
+    background-color: hsl(219, 29%, 14%);
+
+}
+.kira{
+    grid-area: kira;
+    background-color: hsl(0, 0%, 100%);
+
+   
+}
+
+.jeanette{
+    grid-area: jeanette;
+    background-color:hsl(0, 0%, 100%);
+}
+
+.kira .name,
+.jeanette .name{
+    color: hsl(0, 0%, 0%);
+}
+
+.kira .grad,
+.jeanette .grad{
+    color: hsla(0, 0%, 0%, 0.5);
+}
+
+.kira .summery,
+.jeanette .summery{
+    color: hsla(0, 0%, 0%, 0.7);
+}
+.kira .quote,
+.jeanette .quote{
+    color: hsla(0, 0%, 0%, 0.5);
+}
